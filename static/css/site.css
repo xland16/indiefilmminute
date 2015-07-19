@@ -147,20 +147,9 @@ a {
  *           IMAGES           *
  ******************************/
 
-.grid figure figcaption {
-  padding: 1em;
-}
-
-@media (min-width: 992px){
-    .grid figure{
-        height: 300px;
-    }
-}
-
-@media (max-width: 992px){
-    .grid figure{
-        height: 200px;
-    }
+.above-fold {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .grid {
@@ -171,9 +160,20 @@ a {
   margin-top:-1px;
 }
 
+.grid:after {
+  clear:both;
+}
+
 .grid figure {
   width: 50%;
   margin: 0;
+  height: 200px;
+}
+
+@media (min-width: 992px){
+    .grid figure{
+        height: 300px;
+    }
 }
 
 .grid figure h2 {
@@ -185,11 +185,6 @@ a {
   text-transform: none;
 }
 
-.above-fold {
-  padding-top: 20px;
-  text-align: center;
-}
-
 .grid figure p {
   text-shadow:
      1px 1px 0 #000;
@@ -198,11 +193,13 @@ a {
   box-shadow: 2px 2px 2px #000;
 }
 
-.grid:after {
-  clear:both;
+.grid figure figcaption {
+  padding: 1em;
 }
 
 .grid.small figure {
+  width: 25%;
+  margin: 0;
   min-width: 160px;
   max-width: 240px;
   max-height: 240px;
@@ -259,8 +256,12 @@ figure.featured-review p:before {
   width: 100%;
 }
 
-.review-link {
-  margin-top: 25px;
+
+
+@media (min-width: 768px){
+  .review-link {
+    margin-top: 25px;
+  }
 }
 
 .review-link p,
@@ -293,6 +294,12 @@ figure.featured-review p:before {
 
 .featured-bar p {
   margin: 0 0 18px;
+}
+
+@media (min-width: 992px){
+  .featured-bar img {
+    max-width: 250px;
+  }
 }
 
 .main-featured {
