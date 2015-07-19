@@ -15,6 +15,11 @@ body > .container:not(.footer) {
     padding-bottom: 40px;
 }
 
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
   color: #333;
@@ -87,6 +92,8 @@ a {
 
 .navbar .logo img {
     margin: 10px 0 0 0;
+    width: 150px;
+    max-width: 100%;
 }
 
 .navbar .social {
@@ -165,9 +172,12 @@ a {
 }
 
 .grid figure {
-  width: 50%;
-  margin: 0;
+  margin: 2px;
   height: 200px;
+  width: -moz-calc(50% - 4px);
+  width: -webkit-calc(50% - 4px);
+  width: -o-calc(50% - 4px);
+  width: calc(50% - 4px);
 }
 
 @media (min-width: 992px){
@@ -198,8 +208,10 @@ a {
 }
 
 .grid.small figure {
-  width: 25%;
-  margin: 0;
+  width: calc(25% - 4px);
+  width: -moz-calc(25% - 4px);
+  width: -webkit-calc(25% - 4px);
+  width: -o-calc(25% - 4px);
   min-width: 160px;
   max-width: 240px;
   max-height: 240px;
@@ -216,6 +228,20 @@ a {
   transform: translateX(-25%);
 }
 
+
+figure.review p {
+  background-color: #c72439;
+}
+
+figure.review p:before {
+  content: "Listen Now";
+}
+
+figure.effect-honey.review figcaption::before {
+  background: #c72439;
+}
+
+/*
 figure.effect-honey.new-review figcaption::before {
   background: #c72439;
 }
@@ -238,7 +264,7 @@ figure.new-review p:before {
 
 figure.featured-review p:before {
   content: "Featured Review";
-}
+}*/
 
 /******************************
  *         BELOW FOLD         *
@@ -288,16 +314,16 @@ figure.featured-review p:before {
   font-style: italic;
 }
 
-.featured-bar {
+.top-reviews {
   border-left: 1px solid #eee;
 }
 
-.featured-bar p {
+.top-reviews p {
   margin: 0 0 18px;
 }
 
 @media (min-width: 992px){
-  .featured-bar img {
+  .top-reviews img {
     max-width: 250px;
   }
 }
@@ -322,6 +348,7 @@ figure.featured-review p:before {
   background: #333;
   height: 120px;
   padding: 20px;
+  font-weight: bold;
  }
 
 .footer .social {
