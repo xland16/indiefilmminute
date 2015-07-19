@@ -1,0 +1,336 @@
+/******************************
+ *          GENERIC           *
+ ******************************/
+
+body {
+  /*padding-top: 200px;*/
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+  background: #f0f0f0;
+  line-height: 1;
+ /* background: #fff;*/
+}
+
+body > .container:not(.footer) {
+    background: #fff;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+  color: #333;
+}
+
+a {
+  color: #c72439;
+}
+
+.starter-template {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.starter-template img {
+  border: 2px solid #eee;
+
+}
+
+
+/******************************
+ *         NAVIGATION         *
+ ******************************/
+
+.masthead {
+  padding-bottom:10px;
+}
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
+.navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: #333;
+  padding: 10px 0 0 0;
+}
+.navbar-brand img {
+  vertical-align: center;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.navbar-nav>li>a {
+  line-height: 5px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.navbar .container {
+    background: #fffdf9;
+}
+
+.navbar .logo img {
+    margin: 10px 0 0 0;
+}
+
+.navbar .social {
+  font-size: 1.8em;
+  padding-top:20px;
+}
+
+#navbar {
+    border: 1px solid #aaa;
+    border-width: 1px 0;
+}
+
+.navbar .brand {
+  padding-bottom: 10px;
+}
+
+.navbar .brand h1 {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 1.1;
+ /* letter-spacing: .2em;*/
+  line-height: 1.1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  background-color: #f7f2e4;
+  color: #c72439;
+}
+
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+  background-color: #f7f2e4;
+  color: #c72439;
+}
+
+#bar {
+    width: 100%;
+    background: #000;
+    height: 30px;
+}
+
+
+/******************************
+ *       ADVERTISEMENTS       *
+ ******************************/
+
+.advertisement img {
+  max-width: 100%;
+}
+
+.advertisement {
+  text-align:center;
+  margin-top:15px;
+}
+
+
+/******************************
+ *           IMAGES           *
+ ******************************/
+
+.grid figure figcaption {
+  padding: 1em;
+}
+
+@media (min-width: 992px){
+    .grid figure{
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px){
+    .grid figure{
+        height: 200px;
+    }
+}
+
+.grid {
+  max-width: 960px;
+  padding: 0;
+  clear:both;
+  display:inline-block;
+  margin-top:-1px;
+}
+
+.grid figure {
+  width: 50%;
+  margin: 0;
+}
+
+.grid figure h2 {
+  text-align:center;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
+  word-spacing: 0em;
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+  text-transform: none;
+}
+
+.above-fold {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.grid figure p {
+  text-shadow:
+     1px 1px 0 #000;
+  display: inline-block;
+  padding: 2px 14px 4px;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.grid:after {
+  clear:both;
+}
+
+.grid.small figure {
+  min-width: 160px;
+  max-width: 240px;
+  max-height: 240px;
+}
+
+.grid.small figure h2 {
+  font-size: 24px;
+}
+
+.grid.small figure img {
+  max-width: 200%;
+  -ms-transform:  translateX(-25%); /* IE 9 */
+  -webkit-transform:  translateX(-25%); /* Chrome, Safari, Opera */
+  transform: translateX(-25%);
+}
+
+figure.effect-honey.new-review figcaption::before {
+  background: #c72439;
+}
+
+figure.effect-honey.featured-review figcaption::before {
+  background: #60c884;
+}
+
+figure.new-review p {
+  background-color: #c72439;
+}
+
+figure.featured-review p {
+  background-color: #60c884;
+}
+
+figure.new-review p:before {
+  content: "New Review";
+}
+
+figure.featured-review p:before {
+  content: "Featured Review";
+}
+
+/******************************
+ *         BELOW FOLD         *
+ ******************************/
+.below-fold {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.below-fold .row {
+  margin-bottom: 10px;
+}
+
+.below-fold img {
+  width: 100%;
+}
+
+.review-link {
+  margin-top: 25px;
+}
+
+.review-link p,
+.review-text-link p {
+  margin-bottom: 2px;
+}
+
+.review-link .review-title {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.review-text-link .review-title {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.review-link .review-director,
+.review-text-link .review-director  {
+  color: #999;
+  font-style: italic;
+}
+
+.featured-bar {
+  border-left: 1px solid #eee;
+}
+
+.featured-bar p {
+  margin: 0 0 18px;
+}
+
+.main-featured {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.prev-featured {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/******************************
+ *           FOOTER           *
+ ******************************/
+ .footer {
+  background: #333;
+  height: 120px;
+  padding: 20px;
+ }
+
+.footer .social {
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 20px;
+}
+
+.footer .social a {
+  color: #999;
+}
+
+.footer .social a:hover {
+  color: #bbb;
+}
+
+.footer .logo {
+  text-align:center;
+}
